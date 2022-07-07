@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class parsedCSV {
     public static void main(String[] args) {
-        String path = "/Users/jjun/Documents/csv_files/US Content Pages - DocumentPage.csv";
+        String path = "/Users/jjun/Documents/csv_files/combined.csv";
         String line = "";
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
@@ -20,6 +20,7 @@ public class parsedCSV {
                     i++;
                     System.out.println("Hyperlink: " + values[0] + ", Content Page: " + values[1] + ", Title: " + values[2] + ", Path: " + values[3]);
 //                System.out.println("Title: " + values[2]);
+//                    System.out.println(values);
                     System.out.println(i);
                 }
             }
